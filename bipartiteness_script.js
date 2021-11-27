@@ -14,7 +14,7 @@ let NOT_COLORED = -1;
 let BLUE = 0;
 let RED = 1;
 
-// define a graph as a 2-dimensional array -> 1 denotes an edge from the current vertex to the vertex and corresponding index
+// define a graph as a 2-dimensional array -> 1 denotes an edge from the current vertex to the vertex of the corresponding index
 let Graph = [
     [0, 1, 0, 1, 0],
     [1, 0, 0, 0, 1],
@@ -96,6 +96,9 @@ function isGraphBipartite() {
     return true;
 }
 
+/**
+ * Calls the bipartiteness check function and displays the result.
+ */
 function testBipartiteness() {
     if (isGraphBipartite()) alert("The selected graph is bipartite!");
     else alert("The selected graph is NOT bipartite!");
